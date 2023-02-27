@@ -5,11 +5,11 @@ Mobile base host configuration
 1. Install vim
 ```
 sudo apt-get update
-sudo apt-get install vim -y
+sudo apt-get install -y vim
 ```
 1. Enable remote ssh
 ```
-sudo apt-get install openssh-server
+sudo apt-get install -y openssh-server
 sudo systemctl enable ssh
 sudo systemctl start ssh
 ```
