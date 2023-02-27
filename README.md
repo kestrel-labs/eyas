@@ -29,10 +29,10 @@ network:
   version: 2
   renderer: networkd
   ethernets:
-    enp1s0: # Edit this line according to your network interface name.
+    wlp3s0: # Edit this line according to your network interface name.
       dhcp4: no
       addresses:
-        - 192.168.50.252/24 # Edit this line according to your host ip.
+        - 192.168.50.114/24 # Edit this line according to your host ip.
       routes:
         - to: default
           via: 192.168.50.1 # Edit this line according to your router ip.
@@ -43,12 +43,12 @@ network:
 ```
 ```
 sudo netplan apply
-reboot
+sudo reboot
 ```
 
 1. Add to your `/etc/hosts`
 ```
-192.168.50.252  kestrel-runner1
+192.168.50.114  kestrel-eyas1
 ```
 
 1. Install docker and compose
